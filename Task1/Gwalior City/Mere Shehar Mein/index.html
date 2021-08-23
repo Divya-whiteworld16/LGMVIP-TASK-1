@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Gwalior City</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,1000,600,700,800,900&display=swap" rel="stylesheet">
+
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- icons -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+      <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+
+      
+<body>
+      
+      <a name="home"></a>
+      <div class="wrapper">
+
+            <!--------------- hero section starts here --------------->
+
+            <div class="city-image">
+                 
+            </div>
+
+            <div class="header">
+                 <marquee> <h1>Welcome to Gwalior</h1></marquee>
+            </div>
+
+            <!--------------- hero section ends here --------------->
+
+            <!--------------- navbar starts here --------------->
+
+            <nav class="nav">
+                  <span id="brand">
+                        <a href="index.html">Mere Shehar Mein</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#team">Author</a></li>
+                        <li><a href="#Footer">Contact</a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#team">Author</a></li>
+                        <li><a href="#Footer">Contact</a></li>
+                  </ul>
+            </div>
+
+            <!--------------- navbar ends here --------------->
+
+            <div class="content" >
+
+            <!--------------- about section starts here --------------->
+
+            <a name="about" ></a>
+
+           <section class="story">
+      
+
+                  <div class="container-fluid">
+
+                        <div class="section-data">
+
+                              <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">01</div>
+                                    <div class="col-md-8 " data-wow-delay="0.4s" style="font-size: 45px;font-weight: bold;">About</div>
+                              </div>
+
+                              <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6 " data-wow-delay="0.5s"><h1>Gwalior is known for its fortress ruled by varius north-indian kingdoms. It is situated in the heart of india i.e. Madhya Pradesh state. </h1></div>
+                              </div>
+
+                              <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">Gwalior is the major city in the central Indian state of Madhya Pradesh having the population of 2.6 million (approx). Gwalior is known for its beautiful and historic Fort, which is build in 10 century.Gwalior Fort was also called pearl necklace of the India by Mughal Emperor, Babur.<span id="dots">...</span><span id="more">  Beside this there are many other beautiful places in Gwalior. Jai vilas palace , Tansen Museum, Musical Fountain ,Sun Temple and many more. To praise the heavenliness of Gwalior please do visit.</span>
+           
+        
+                                    </div>
+                              </div>
+
+                              <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
+                                          <button onclick="myFunction()" id="myBtn">Read more</button>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                  </div><script>
+                        function myFunction() {
+                          var dots = document.getElementById("dots");
+                          var moreText = document.getElementById("more");
+                          var btnText = document.getElementById("myBtn");
+                        
+                          if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                          } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                          }
+                        }
+                        </script>
+                        
+
+           </section>
+
+            <!--------------- about section ends here --------------->
+
+            <!--------------- Gallery section starts here --------------->
+            <a name="Gallery" ></a>
+          <section class="Gallery" style="background-color: cadetblue;">
+                  <style>
+           * {
+            box-sizing: border-box;
+          }
+          
+          img {
+            vertical-align: middle;
+          }
+          
+          /* Position the image container (needed to position the left and right arrows) */
+          .container {
+            position: relative;
+          }
+          
+          /* Hide the images by default */
+          .mySlides {
+            display: none;
+          }
+          
+          /* Add a pointer when hovering over the thumbnail images */
+          .cursor {
+            cursor: pointer;
+          }
+          
+          /* Next & previous buttons */
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -100px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+          }
+          
+          /* Position the "next button" to the right */
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+          
+          /* Number text (1/3 etc) */
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          
+          /* Container for image text */
+          .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+          }
+          
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Six columns side by side */
+          .column {
+            float: left;
+            width: 16.66%;
+          }
+          
+          /* Add a transparency effect for thumnbail images */
+          .demo {
+            opacity: 0.6;
+          }
+          
+          .active,
+          .demo:hover {
+            opacity: 1;
+          }
+          </style>
+          
+          
+          <h2 style="text-align:center; font-weight: bolder;color: black; font-size:100px;">Gallery</h2>
+          
+          <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="images/R.gif" style="width:100%;height:50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="images/palace1.jpg" style="width:100%;height:50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="images/p2.jpg" style="width:100%;height:50%;">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="images/g1.jpg" style="width:100%;height:50%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="images/f2.jpg" style="width:100%;height:50%;">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="images/t1.jpg" style="width:100%;height:50%;">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/R.gif" style="width:100%; height:50%" onclick="currentSlide(1)" alt="The Fort">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/palace1.jpg" style="width:100% ;height: 50%;" onclick="currentSlide(2)" alt="Jai Vilas palace">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/p2.jpg" style="width:100% ;height:50%" onclick="currentSlide(3)" alt="Inside view">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/g1.jpg" style="width:100%; height:50%;" onclick="currentSlide(4)" alt="Gurudwara">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/f2.jpg" style="width:100%;height:50%;" onclick="currentSlide(5)" alt="Gwalior Fort">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="images/t1.jpg" style="width:100%;height:50%;" onclick="currentSlide(6)" alt="Sun Temple">
+              </div>
+            </div>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+              </section>
+
+            <!--------------- services section ends here --------------->
+
+            <!--------------- team section starts here --------------->
+
+            <a name="team"></a>
+
+            <section class="team">
+
+                  <div class="container-fluid">
+
+                        <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s">03</div>
+                              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Developer</div>
+                        </div>
+
+                        <div class="row members">
+
+                              <div class="col-md-4"></div>
+
+                              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="team-member">
+                                          <div class="team-img team-one"></div>
+                                    </div>
+                                    <div class="team-title">
+                                          <h5>Divya Mishra</h5>
+                                        <p style="color:crimson;">[LGMVIP]</p>  
+                                          <span>Front-end Developer</span>
+                                    </div>
+                              </div>
+
+                              
+                                          </div>
+                                    </div>
+
+                        
+
+                  
+
+            </section>
+            
+            <!--------------- team section ends here --------------->
+
+            <!--------------- newsletter section starts here --------------->
+
+           <section class="newsletter">
+
+                  <div class="container">
+
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="news-data">
+                                    <div class="section-subheading">
+                                          <h1 class="wow fadeInUp" data-wow-delay="0.3s">Subscribe to our newsletter</h1>
+                                    </div>
+
+                                    <div class="input-group wow fadeInUp" data-wow-delay="0.4s">
+                                          <input type="email" class="form-control" placeholder="Enter your email">
+                                          <span class="input-group-btn">
+                                                <button class="btn" type="submit">Subscribe</button>
+                                          </span>
+                                    </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+
+           </section>
+
+            <!--------------- newsletter section ends here --------------->
+
+            
+
+            <!--------------- footer starts here --------------->
+            <a name="Footer"></a>
+
+            <div class="footer">
+
+                  <div class="container">
+
+                        <div class="info">
+
+                              <div class="row">
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="address">
+                                          <p>Workarea</p>
+                                          <h4>8 Rockville Avenue</h4>
+                                          <h4>Southaven</h4>
+                                          <h4>India</h4>
+
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
+                                          <ul>
+                                                <li><ion-icon name="logo-facebook"></ion-icon></li>
+
+                                                <li><ion-icon name="logo-instagram"></ion-icon></li>
+
+                                                <li><ion-icon name="logo-twitter"></ion-icon></li>
+
+                                                <li><ion-icon name="logo-youtube"></ion-icon></li>
+                                          </ul>
+
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
+                                          <p>Ping me on</p>
+                                          <h4>noreply@gmail.com</h4>
+
+                                          <br><br>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                  </div>
+
+            </div>
+          
+
+            <!--------------- footer ends here --------------->
+
+            </div>
+
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+
+// navigation starts here
+$("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+new WOW().init();
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+</script>
+</body>
+</html>
